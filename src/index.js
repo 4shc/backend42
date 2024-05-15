@@ -7,7 +7,7 @@ const cors = require ('cors');
 
 // Configurando express y puerto
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 //enlazamos la conexión de la BD
 conectarBD();
